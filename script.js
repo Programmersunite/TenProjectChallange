@@ -11,7 +11,7 @@ let timeLeft =Math.floor((fionaPartyDate-currentDate) / 1000)
 console.log(timeLeft)
 let seconds = Math.floor(timeLeft%60)
 let min = Math.floor(timeLeft/60%60)
-let hours = Math.floor(timeLeft/3600%60)
+let hours = Math.floor(timeLeft/3600%24)
 let days= Math.floor(timeLeft / 3600 / 24)
 console.log(days, hours, min)
 daysEl.innerHTML= days
